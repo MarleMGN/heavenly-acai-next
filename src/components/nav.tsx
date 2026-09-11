@@ -1,14 +1,15 @@
 import React from "react";
+import "../components/nav.css"
 import Image from "next/image";
-import HeavenlyLogo from "../assets/heavenly-logo.png";
+
 
 const Nav = () => {
   return (
     <>
       <nav>
         <div className="nav__container">
-          <div>
-            <Image src={HeavenlyLogo} alt="logo" className="nav__icon" />
+          <div className="nav__icon-container">
+            <Image src="/HeavenlyLogo.jpg" alt="logo" width={150} height={150} className="nav__icon" />
           </div>
           <ul className="nav__links">
             <li className="nav__list">
