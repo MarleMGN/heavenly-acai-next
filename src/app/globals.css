@@ -56,6 +56,14 @@ button {
   overflow: hidden;
 }
 
+.slideshow__logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
 .slideshow__bg {
   position: absolute;
   inset: 0;
@@ -77,27 +85,6 @@ button {
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-.prev {
-  left: 5%
-}
-
-.next {
-  right: 5%
 }
 
 .slideshow__img {
@@ -166,6 +153,7 @@ button {
   margin: 10px 0;
   text-align: center;
   list-style: none;
+  font-size: 20px;
 }
 
 .why__choose--container ul {
@@ -174,4 +162,18 @@ button {
 
 .purple {
   color: #7342d6;
+}
+
+.menu-bg {
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.menu__container {
+  height: 800px;
+  display: flex;
 }
