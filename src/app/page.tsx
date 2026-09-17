@@ -94,8 +94,18 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="menu__container">
-            <div className="menu-bg"></div>
+          <div className="menu-bg">
+            <div className="menu__container">
+              <div className="menu__content">
+                <div className="menu__title purple">Our Menu</div>
+                <div className="menu"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="locations__container">
+            <div className="locations__bg"></div>
           </div>
         </section>
         <section>
