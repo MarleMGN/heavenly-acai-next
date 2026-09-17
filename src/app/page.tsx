@@ -38,8 +38,8 @@ export default function Home() {
   }, []);
 
   const toggleTab = (tabName: string) => {
-  setOpenTab(openTab === tabName ? "" : tabName);
-};
+    setOpenTab(openTab === tabName ? "" : tabName);
+  };
 
   return (
     <>
@@ -104,9 +104,12 @@ export default function Home() {
             <div className="menu__container">
               <div className="menu__content">
                 <div className="menu__title purple">Our Menu</div>
-                <div className="menu__img-wrapper">
-                  <div className="menu">
-                    <div className={`menu__tab ${openTab === "signature" ? "tab-open" : ""}`} onClick={() => toggleTab("signature")}>
+                <div className="menu">
+                  <div
+                    className={`menu__tab ${openTab === "signature" ? "tab-open" : ""} ${openTab !== "" && openTab !== "signature" ? "tab-hidden" : ""}`}
+                    onClick={() => toggleTab("signature")}
+                  >
+                    <div className="tab__header-wrapper">
                       <div className="menu__tab-text purple">
                         Signature Bowls
                       </div>
@@ -127,7 +130,12 @@ export default function Home() {
                         </svg>
                       </div>
                     </div>
-                    <div className={`menu__tab ${openTab === "specialty" ? "tab-open" : ""}`} onClick={() => toggleTab("specialty")}>
+                  </div>
+                  <div
+                    className={`menu__tab ${openTab === "specialty" ? "tab-open" : ""} ${openTab !== "" && openTab !== "specialty" ? "tab-hidden" : ""}`}
+                    onClick={() => toggleTab("specialty")}
+                  >
+                    <div className="tab__header-wrapper">
                       <div className="menu__tab-text purple">
                         Specialty Bowls
                       </div>
@@ -148,7 +156,12 @@ export default function Home() {
                         </svg>
                       </div>
                     </div>
-                    <div className={`menu__tab ${openTab === "drinks" ? "tab-open" : ""}`} onClick={() => toggleTab("drinks")}>
+                  </div>
+                  <div
+                    className={`menu__tab ${openTab === "drinks" ? "tab-open" : ""} ${openTab !== "" && openTab !== "drinks" ? "tab-hidden" : ""}`}
+                    onClick={() => toggleTab("drinks")}
+                  >
+                    <div className="tab__header-wrapper">
                       <div className="menu__tab-text purple">Drinks</div>
                       <div className="menu__tab-x">
                         <svg
@@ -167,7 +180,12 @@ export default function Home() {
                         </svg>
                       </div>
                     </div>
-                    <div className={`menu__tab ${openTab === "bites" ? "tab-open" : ""}`} onClick={() => toggleTab("bites")}>
+                  </div>
+                  <div
+                    className={`menu__tab ${openTab === "bites" ? "tab-open" : ""} ${openTab !== "" && openTab !== "bites" ? "tab-hidden" : ""}`}
+                    onClick={() => toggleTab("bites")}
+                  >
+                    <div className="tab__header-wrapper">
                       <div className="menu__tab-text purple">Bites</div>
                       <div className="menu__tab-x">
                         <svg
